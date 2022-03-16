@@ -1,0 +1,46 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border: 1px solid red;
+}
+
+th {
+    border: 1px solid orange;
+}
+
+td{
+    border: 1px dotted green;
+}
+.flag-france {
+    border: 1px solid black;
+    width: 60px;
+}
+.red, .blue, .white {
+    width: 20px;
+    height: 40px;
+    display: table-cell;
+    padding: 0;
+}
+
+.red {
+    background-color: red;
+}
+
+.white {
+    background-color: white;
+}
+.blue {
+    background-color: blue;
+}
+
+.first-div-blue {
+    color: blue;
+}
+
+.first-div ul li {
+    text-transform: uppercase;
+    font-weight: bold;
+}
