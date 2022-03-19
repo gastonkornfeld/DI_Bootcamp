@@ -141,8 +141,28 @@ footer {
     margin: 15px;
 }
 
+.hidden-block {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.hidden-block div:hover {
+    background-color: antiquewhite;
+}
 .products-container:hover {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.products-container:hover .hidden-block{
+    display: flex;
+}
+
+.products-container:hover button{
+    background-color: #226b51;
+    color: rgb(224, 223, 223);
 }
 
 .products-container img {
