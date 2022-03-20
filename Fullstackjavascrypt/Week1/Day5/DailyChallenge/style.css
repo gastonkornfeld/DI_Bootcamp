@@ -1,0 +1,227 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #202020;
+    height: 50px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+
+}
+.enemies-inner h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: navy;
+
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    letter-spacing: 5px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    padding-right: 50px ;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.strange-icon {
+    width: 50px;
+    height: 50px;
+}
+
+a {
+    color: white;
+}
+
+.home-body {
+    background-image: url("https://img.jakpost.net/c/2016/10/26/2016_10_26_14660_1477479380._large.jpg");
+    height: calc(100vh - 100px);
+    color: navy;
+}
+
+.enemies-body {
+    background-image: url("https://img1.goodfon.com/wallpaper/nbig/8/21/doktor-strendzh-doctor-strange-poster-fantastika-fentezi-ben.jpg");
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home-body p {
+    font-size: 22px;
+    height: 12%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:navy;
+}
+
+.power-body {
+    background-image: url("https://i.pinimg.com/originals/36/ac/97/36ac974ad97b439a4c9740b48e666f90.jpg");
+    height: calc(100vh - 100px);
+    color: white;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer {
+    height: 50px;
+    background-color: #202020;
+    color: white;
+}
+
+.footer-home {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-home a {
+    text-transform: none;
+    text-decoration: none;
+
+}
+
+.enemies {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 2px;
+}
+
+.enemies div img {
+    width: 190px;
+    height: 190px;
+}
+
+.enemies-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enemies div p {
+    text-align: center;
+    color: navy;
+}
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+    footer {
+        letter-spacing: 9px;
+    }
+    
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    .home-body {
+        background-image: url("https://d1nslcd7m2225b.cloudfront.net/Pictures/480xAny/4/1/7/1249417_Doctor-Strange-promo-still_starring-Benedict-Cumberbatch.jpg");
+        background-size: cover;
+    }
+
+    .power-body {
+    background-image: url("https://maxblizz.com/wp-content/uploads/2022/01/Doctor-Strange-1200x800.jpg");
+    color: rgb(177, 124, 26);
+    font-weight: 1200;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .enemies-body {
+        flex-direction: column;
+        height: 100%;
+        background-size: contain;
+        background-image: url("https://i.guim.co.uk/img/media/d4a34d97ae20c403c5568ec596e81678dae476a7/0_1_1887_1133/500.jpg?quality=85&auto=format&fit=max&s=7957fcba52a13af2057099ea07a2d17d");
+    }
+    p {
+        font-size: 14px;
+    }
+    .home-body p {
+        font-size: 18px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .home-body {
+        background-image: url("https://i.annihil.us/u/prod/marvel/i/mg/9/f0/57fe4ef408a29/standard_incredible.jpg");
+        background-size: cover;
+    }
+
+    .power-body {
+        background-image: url("https://comicvine.gamespot.com/a/uploads/scale_small/12/124259/8304261-death_of_doctor_strange_vol_1_4.jpg");
+        color: rgb(177, 124, 26);
+        font-weight: 1200;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-size: cover;
+        color: rgb(199, 189, 189);
+    }
+
+    .power-body div {
+        height: 85px;
+        line-height: 13px;
+    }
+
+    .enemies-body {
+        flex-direction: column;
+        height: 100%;
+        background-size: contain;
+        background-image: url("https://doms2cents.com/wp-content/uploads/2021/10/doctor-strange-2-img-2.jpg");
+    }
+
+    header {
+        font-size: 13px;
+    }
+    
+    footer {
+        letter-spacing: 3px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .home-body p {
+        font-size: 16px;
+        color: red;
+    }
+
+    
+}
+
+@media all and (max-width: 480px) {
+    * {
+        color: rgb(176, 179, 28);
+    }
+}
