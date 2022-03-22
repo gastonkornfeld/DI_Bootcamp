@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-div-body {
+    height: 100vh;
+    background: url("https://www.compusurf.es/wp-content/uploads/2018/10/background-world-map-1.gif");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body-title {
+    width: 50%;
+    height: 25vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-numbers {
+    display: flex;
+    width: 58%;
+    height: 30vh;
+    justify-content: space-between;
+}
+
+.up-number {
+    font-size: 32px;
+    color: rgb(40, 100, 190);
+    font-weight: bolder;
+}
+
+.down-text {
+    font-size: 10px;
+}
+
+.body-left-numbers, .body-middle-numbers, .body-right-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+    justify-content: space-around;
+}
+
+.cards-div {
+    display: flex;
+    height: 55vh;
+    width: 98%;
+    justify-content: space-around;
+}
+
+.card1 , .card2, .card3 {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    width: 30%;
+    position: relative;
+}
+
+.bottom-bottom-card {
+    font-size: 12px;
+}
+
+.image-card {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    border-radius: 50%;
+}
+
+.image-card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.card2 {
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.card3 {
+    align-self: center;
+}
+
+.card-upper {
+    height: 60%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    color: grey;
+    background-color: white;
+}
+
+.upper-inside-div {
+    width: 90%;
+}
+
+.card-bottom {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.pink {
+    background-color: rgb(230, 82, 131);
+}
+
+.blue {
+    background-color: rgb(76, 132, 206);
+}
+
+.green {
+    background-color: rgb(77, 201, 194);
+}
