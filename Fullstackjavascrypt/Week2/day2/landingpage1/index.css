@@ -69,14 +69,14 @@
     font-size: 12px;
 }
 
-.image-card {
+.image-card1, .image-card2, .image-card3 {
     position: absolute;
     left: 45%;
     top: 50%;
     border-radius: 50%;
 }
 
-.image-card img {
+.image-card1 img , .image-card2 img, .image-card3 img {
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -126,4 +126,126 @@
 
 .green {
     background-color: rgb(77, 201, 194);
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .cards-div {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .card2, .card3 {
+        align-self: flex-end;
+    }
+
+    .card1, .card2, .card3 {
+        width: 60%;
+        height: 22vh;
+        margin-right: 20px;
+    }
+
+    .image-card1 {
+        position: fixed;
+        left: 23%;
+        margin: 0;
+    }
+
+    .image-card2 {
+        position: fixed;
+        left: 23%;
+        top:65%
+    }
+
+    .image-card3 {
+        position: fixed;
+        left: 23%;
+        top:82%
+    }
+
+    .image-card1 img , .image-card2 img, .image-card3 img {
+        border-radius: 15%;
+        width: 100px;
+        height: 60px;
+        border: 1px solid grey;
+    }
+
+    .body-numbers {
+        display: flex;
+        width: 85%;
+        height: 30vh;
+        justify-content: space-around;
+    }
+    .body-title {
+        width: 80%;
+        height: 23vh;
+        font-size: 15px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    
+    .cards-div {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .card2, .card3 {
+        align-self: flex-end;
+    }
+
+    .card1, .card2, .card3 {
+        width: 65%;
+        height: 22vh;
+        margin-right: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .image-card1 {
+        position: fixed;
+        left: 13%;
+        margin: 0;
+    }
+
+    .image-card2 {
+        position: fixed;
+        left: 13%;
+        top:65%
+    }
+
+    .image-card3 {
+        position: fixed;
+        left: 13%;
+        top:82%
+    }
+
+    .image-card1 img , .image-card2 img, .image-card3 img {
+        border-radius: 15%;
+        width: 100px;
+        height: 60px;
+        border: 1px solid red;
+    }
+    .body-numbers {
+        display: flex;
+        width: 90%;
+        height: 30vh;
+        justify-content: space-around;
+    }
+
+    .body-title {
+        width: 90%;
+        height: 20vh;
+        font-size: 13px;
+    }
+
+    .up-number {
+        font-size: 22px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    
 }
