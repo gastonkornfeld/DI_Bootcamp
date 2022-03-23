@@ -1,0 +1,39 @@
+
+
+.navbar-brand {
+    color: rgb(199, 192, 192) !important; 
+}
+
+.nav-link {
+    color: rgb(199, 192, 192) !important;
+}
+.navbar-brand:hover, .nav-link:hover {
+    color: white !important;
+    background-color: black;
+}
+.btn-success {
+    font-size: 14px;
+    width: 15vw;
+    letter-spacing: 1.5px;
+}
+
+.d-flex {
+    margin-right: auto;
+}
+
+.hello {
+    padding-left: 150px !important;
+}
+
+.card {
+    border: none;
+}
+
+.columns, .jumbo {
+    width: 81%;
+    margin: 0 auto;
+}
+
+.badge-pill {
+    border-radius: 50%;
+}
