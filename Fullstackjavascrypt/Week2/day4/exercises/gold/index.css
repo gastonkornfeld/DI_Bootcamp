@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    justify-content: space-around;
+}
+
+.body-main-div {
+    background: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg");
+    height: 60vh;
+    background-size: cover;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 14px;
+}
+.navbar-brand:hover, .nav-link:hover {
+    color: white !important;
+    background-color: black;
+}
+.btn-success {
+    font-size: 14px;
+    width: 15vw;
+    letter-spacing: 1.5px;
+}
+
+.d-flex {
+    margin-right: auto;
+}
+
+.card {
+    border: none;
+}
+
+.columns {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.jumbo {
+    width: 70%;
+    margin: auto;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.badge-pill {
+    border-radius: 50%;
+}
+
+.fa, .learn {
+    color: rgb(48, 98, 139);
+}
+
+h4 {
+    color: rgb(48, 98, 139);
+}
