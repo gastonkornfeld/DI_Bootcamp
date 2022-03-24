@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 75px;
+    width: 100%;
+    background-color: cornflowerblue;
+    position: fixed;
+    top: 0%;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(0,0,0, 0.6);
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: rgb(13, 41, 92);
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 15%;
+}
+
+.nav-right {
+    position: relative;
+    right: 50px;
+}
+
+.nav-right:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.nav-icon {
+    border: 2px dashed rgba(0,0,0, 0.6);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left:10px;
+    color:rgba(0,0,0, 0.6);
+}
+
+.nav-icon a {
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.nav-icon:hover {
+    -webkit-transform: rotateZ(-5deg);
+    -ms-transform: rotateZ(-5deg);
+    transform: rotateZ(-5deg);
+}
+
+.body-div {
+    height: calc(100vh - 75px);
+    background:
+        linear-gradient(to left top, rgba(76, 54, 173, 0.342) 0%/*bottom-right color*/, rgba(12, 12, 12, 0.87) 35%, rgba(78, 132, 233, 0.315) 70% /*middle color*/, rgba(19, 9, 2, 0.884) 100% /*top-left color*/),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.title-div {
+    text-align: center;
+    color: rgba(252, 252, 252, 0.8);
+}
+
+.item-portfolio div p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px;
+}
+
+
+
+.central-div-home {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url("https://static.vecteezy.com/system/resources/previews/002/949/141/non_2x/programming-code-coding-or-hacker-background-vector.jpg");
+    color:white;
+
+}
+
+.central-text {
+    display: flex;
+    width: 80%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home-rest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.15);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-me {
+    display: flex;
+    width: 70%;
+}
+.about-me-img{
+    border-right: 2px solid cornflowerblue;
+    padding-right: 5px;
+}
+
+
+.about-me-img img {
+    border-radius: 50%;
+    width: 40vh;
+    height: 40vh;
+    border-right: 2px solid cornflowerblue;
+}
+
+.title {
+    height: 15vh;
+    margin-top: 5vh;
+}
+
+.about-me-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    padding: 10px;
+}
+
+.about-me-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 0 0 10px;
+}
+
+.about-me-img-foot {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 70%;
+    gap: 5px;
+}
+
+.item-portfolio img {
+    width: 45vh;
+    height: 30vh;
+    border-radius: 10%;
+}
+
+.item-portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.item-portfolio:hover {
+    background-color: rgba(64, 155, 240, 0.8);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.item-portfolio:hover div a {
+    color: black;
+}
+.item-portfolio div a:hover {
+    background-color: white;
+    padding: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    height: 75px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.studies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    gap: 5px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 70%;
+    gap: 10px;
+}
+
+.skills-item div img{
+    width: 200px;
+    height: 200px;
+}
+
+.skills-item .card img {
+    margin: auto;
+    border-radius: 10%;
+}
+
+.skills-item .card{
+    border-radius: 5%;
+}
+.skills-item .card .card-header:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.skills-item .card:hover {
+    -webkit-transform: rotateZ(-3deg);
+    -ms-transform: rotateZ(-3deg);
+    transform: rotateZ(-3deg);
+}
+.beg {
+    background-color: red;
+}
+
+.int {
+    background-color: orange;
+}
+
+.adv {
+    background-color: green;
+}
+
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .portfolio {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 70%;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        gap: 10px;
+    }
+
+    
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-icon {
+        border: none;
+        padding: 5px;
+        margin-left: 0;
+    }
+    .nav-right {
+        position: static;
+        display: flex;
+        font-size: 12px;
+    }
+
+    .central-div-home {
+        width: 70%;
+        height: 70%;
+        justify-content: space-around;
+        align-items: center;
+        background: url("https://static.vecteezy.com/system/resources/previews/002/949/141/non_2x/programming-code-coding-or-hacker-background-vector.jpg");
+        color:white;
+    
+    }
+
+    .title-div h2 {
+        font-size: 20px;
+    }
+
+    .central-text {
+        font-size: 14px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 70%;
+    }
+
+    .about-me-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+    }
+
+    .about-me-img {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        border-right: none;
+    }
+
+    .about-me-img img {
+        border-radius: 25%;
+    }
+    .about-me-r-title h3 {
+        text-align: center;
+
+    }
+
+    .portfolio {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-portfolio {
+        width: 100%;
+    }
+
+    .studies {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 70%;
+        gap: 5px;
+    }
+
+    .card-header {
+        text-align: center;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        gap: 10px;
+    }
+}
+
+@media all and (max-width: 480px) {
+}
