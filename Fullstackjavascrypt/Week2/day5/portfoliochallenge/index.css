@@ -29,7 +29,7 @@ nav a {
 a:hover {
     background-color: rgb(13, 41, 92);
     color: white;
-    padding: 12px;
+    padding: 5px;
     text-decoration: none;
     border-radius: 15%;
 }
@@ -65,7 +65,7 @@ a:hover {
 }
 
 .body-div {
-    height: calc(100vh - 75px);
+    height: calc(50vh - 75px);
     background:
         linear-gradient(to left top, rgba(76, 54, 173, 0.342) 0%/*bottom-right color*/, rgba(12, 12, 12, 0.87) 35%, rgba(78, 132, 233, 0.315) 70% /*middle color*/, rgba(19, 9, 2, 0.884) 100% /*top-left color*/),
         linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
@@ -90,7 +90,7 @@ a:hover {
 
 
 .central-div-home {
-    width: 60%;
+    width: 100%;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -203,6 +203,7 @@ a:hover {
 footer {
     display: flex;
     height: 75px;
+    width: 100%;
     background-color: black;
     color: white;
     align-items: center;
@@ -215,6 +216,12 @@ footer {
     width: 70%;
     gap: 5px;
 }
+
+.study-hov:hover {
+    background-color: green;
+    text-align: center;
+}
+
 
 .skills {
     display: grid;
@@ -234,12 +241,14 @@ footer {
 }
 
 .skills-item .card{
-    border-radius: 5%;
+    border-radius: 2%;
 }
 .skills-item .card .card-header:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
+    background-color: rgba(0,0,0, 0.6);
+    border-radius: 14%;
 }
 
 .skills-item .card:hover {
@@ -257,6 +266,35 @@ footer {
 
 .adv {
     background-color: green;
+}
+
+.gett a:hover i {
+    -webkit-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    transform: scale(1.7);
+}
+
+.contact-body {
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.icons a  {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50pxs;
+    margin: 0 auto;
 }
 
 
@@ -296,16 +334,6 @@ footer {
         position: static;
         display: flex;
         font-size: 12px;
-    }
-
-    .central-div-home {
-        width: 70%;
-        height: 70%;
-        justify-content: space-around;
-        align-items: center;
-        background: url("https://static.vecteezy.com/system/resources/previews/002/949/141/non_2x/programming-code-coding-or-hacker-background-vector.jpg");
-        color:white;
-    
     }
 
     .title-div h2 {
@@ -374,6 +402,15 @@ footer {
         grid-template-columns: 1fr;
         width: 80%;
         gap: 10px;
+    }
+
+    .skills-item{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .skills-item .card img{
+        border-radius: 5%;
     }
 }
 
