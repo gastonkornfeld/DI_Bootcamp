@@ -45,7 +45,7 @@ if (newDog == "Chihuahua") {
 // Exercise 3: Even Or Odd
 // Instructions
 // Prompt the user for a number and save it to a variable.
-let userNumber = prompt("Write a number:");
+let userNumber = parseInt(prompt("Write a number:")) ;
 
 if (userNumber % 2 == 0) {
     console.log(`${userNumber} is an even number`);
