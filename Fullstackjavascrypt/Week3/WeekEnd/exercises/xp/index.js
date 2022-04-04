@@ -66,7 +66,9 @@ for (let person of people) {
 
 // Exercise 2 : Your Favorite Colors
 // Instructions
+
 // Create an array called colors where the value is a list of your five favorite colors.
+
 let colors = ["red", "blue", "green", "light blue", "yellow"];
 let sufixArray = ['st', 'nd', 'rd', "th", 'th'];
 // Loop through the array and as you loop console.log a string like so: “My #1 choice is blue”,
