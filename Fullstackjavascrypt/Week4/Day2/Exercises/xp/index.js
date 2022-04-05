@@ -6,7 +6,7 @@
 console.log("Exercise 1");
 // Create a function called infoAboutMe() that takes no parameter.
 function infoAboutMe() {
-    console.log("I am Kornfeld Gaston from argentina, i have 33 years old and love to play soccer")
+    console.log("I am Kornfeld Gaston from argentina, i have 33 years old and love to play soccer");
 }
 // The function should console.log a sentence about you
 // (ie. your name, age, hobbies ect…).
@@ -45,6 +45,7 @@ console.log("Exercise 2");
 function calculateTip() { // Inside the function, ask John for the amount of the bill.
     let bill = Number(prompt("John, How much was the Bill? : "));
     let tip = 0;
+   
     if (bill <= 50) { // If the bill is less than $50, tip 20%.
         tip = bill * 0.2;
     } else if (bill > 50 && bill <= 200 ) { // If the bill is between $50 and $200, tip 15%.
@@ -54,9 +55,10 @@ function calculateTip() { // Inside the function, ask John for the amount of the
     }
     // Console.log the tip amount and the final bill (bill + tip).
     console.log(`Jhon Your bill was $${bill}, you should tip $${tip}: Total: $${bill + tip}`)
+    return {tip : tip, bill : bill, totalBill : tip + bill };
 }
 
-calculateTip();// Call the calculateTip() function.
+console.log(calculateTip());// Call the calculateTip() function.
 
 
 
@@ -71,17 +73,20 @@ console.log("Exercise 3");
 // Exercise 3 : Find The Numbers Divisible By 23
 // Instructions
 // Create a function call isDivisible() that takes no parameter.
-function isDivisible(divisor) {
+function isDivisible(divisor = 23) {
     let sum = 0;
-    for (let i = 0 ; i<= 500; i++) {// In the function, loop through numbers 0 to 500.
+    let allNumbers = [];
+    for (let i = divisor ; i<= 500; i++) {// In the function, loop through numbers 0 to 500.
         if (i % divisor == 0) {
-            console.log(i);// Console.log all the numbers divisible by 23.
+            allNumbers.push(i);
+            // console.log(i);// Console.log all the numbers divisible by 23.
             sum += i;
         }
     }
-    console.log(sum);// At the end, console.log the sum of all numbers that are divisible by 23.
+    console.log(allNumbers);
+    return allNumbers;
 }
-isDivisible(23);
+console.log(isDivisible());
 isDivisible(3);
 isDivisible(45);
 
