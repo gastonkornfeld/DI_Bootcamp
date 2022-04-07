@@ -1,0 +1,170 @@
+body {
+    background-color: black;
+    padding: 10px;
+}
+
+.planet {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.moon {
+    position: absolute;
+    right: 5vh;
+    bottom: 12vh;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    background: rgb(237, 237, 237);
+    color: red;
+}
+
+.moon, .moonearth, .moon2 {
+    background:
+        linear-gradient(to left bottom, #3a3838 0%/*bottom-right color*/, #5b545b 50% , #6a615d 70% , #817b79 85% /*middle color*/, #736a6b 100% /*top-left color*/),
+        linear-gradient(rgb(34, 34, 11), rgba(163, 47, 47, 0.95))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+
+} 
+
+.moonearth{
+    position: absolute;
+    right: 15vh;
+    bottom: 8vh;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    color: red;
+}
+
+.star {
+    position: fixed;
+    /* right: 2px; */
+    /* top: 2px; */
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: rgb(237, 237, 237);
+    color: red;
+    z-index: -1;
+}
+
+.moon2 {
+    bottom: 11vh;
+    right: 8vh;
+}
+
+
+.mars {
+    position: fixed;
+    width: 7vh;
+    height: 7vh;
+    right: 89vh;
+    top: 52vh;
+    background:
+        linear-gradient(to left bottom, #c93d50 0%/*bottom-right color*/, #ff4500 50% , #9b6854 70% , #ff4500 85% /*middle color*/, #c93d50 100% /*top-left color*/),
+        linear-gradient(rgb(34, 34, 11), rgba(163, 47, 47, 0.95))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+
+    
+}
+
+
+.earth {
+    position: fixed;
+    width: 12vh;
+    height: 12vh;
+    right: 99vh;
+    top: 55vh;
+    background:
+    linear-gradient(to left top, rgba(17, 122, 213, 0.724) 0%/*bottom-right color*/, rgb(1, 203, 254) 50% , rgb(14, 201, 64) 70%  /*middle color*/, rgba(28, 195, 28, 0.8) 100% /*top-left color*/),
+    linear-gradient(brown, rgba(2, 251, 243, 0.95))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+
+}
+
+
+.venus {
+    position: fixed;
+    width: 11vh;
+    height: 11vh;
+    right: 115vh;
+    top: 63vh;
+    background:
+        linear-gradient(to left top, rgba(218, 103, 21, 0.724) 0%/*bottom-right color*/, rgba(206, 86, 39, 0.623) 50% /*middle color*/, rgba(161, 36, 48, 0.8) 100% /*top-left color*/),
+        linear-gradient(yellow, rgba(237, 14, 14, 0.95))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+}
+
+.saturn {
+    position: fixed;
+    width: 20vh;
+    height: 20vh;
+    right: 45vh;
+    top: 25vh;
+    background:
+        linear-gradient(to right top, #ffdea7 0%/*bottom-right color*/, rgba(206, 86, 39, 0.623) 50% , #cc9966 70% , rgba(206, 86, 39, 1) 85% /*middle color*/, #ffdea7 100% /*top-left color*/),
+        linear-gradient(rgb(34, 34, 11), rgba(163, 47, 47, 0.95))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+
+}
+
+
+.jupiter {
+    position: fixed;
+    width: 22vh;
+    height: 22vh;
+    right: 65vh;
+    top: 35vh;
+    background:
+        linear-gradient(to right bottom, rgba(192, 96, 27, 0.724) 0%/*bottom-right color*/, rgba(40, 180, 205, 0.623) 50%  , rgba(121, 83, 69, 0.623) 70%/*middle color*/, rgba(147, 8, 22, 0.8) 100% /*top-left color*/),
+        linear-gradient(rgb(255, 102, 0), rgba(167, 25, 25, 0.95))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+}
+
+.uranus {
+    position: fixed;
+    width: 17vh;
+    height: 17vh;
+    right: 25vh;
+    top: 15vh;
+    background:
+        linear-gradient(to left top, #16a5c9 0% , #111c93 25% , #1a85a0 35%/*bottom-right color*/, #3830d4 50% , #146675 70% , #1389bb 85% /*middle color*/, #3f3dc9 100% /*top-left color*/),
+        linear-gradient(rgb(34, 34, 11), rgba(163, 47, 47, 0.95))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+}
+
+.mercury {
+    position: fixed;
+    width: 5vh;
+    height: 5vh;
+    right: 130vh;
+    top: 73vh;
+    background:
+        linear-gradient(to left top, rgba(112, 128, 144, 0.2) 0%/*bottom-right color*/, rgba(112, 128, 144, 0.4) 50% /*middle color*/, rgba(112, 128, 144, 1) 100% /*top-left color*/),
+        linear-gradient(rgba(112, 128, 144, 0.4), rgba(112, 128, 144, 0.2))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+    /* background-color: rgb(112, 128, 144); */
+}
+
+.sun {
+    position: fixed;
+    width: 55vh;
+    height: 55vh;
+    right: 140vh;
+    top: 83vh;
+    background:
+        linear-gradient(to left top, rgba(205, 195, 13, 0.849) 0%/*bottom-right color*/, rgba(224, 214, 17, 0.863) 50% /*middle color*/, rgb(219, 100, 8) 100% /*top-left color*/),
+        linear-gradient(rgba(112, 128, 144, 0.4), rgba(112, 128, 144, 0.2))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+    /* background-color: rgb(112, 128, 144); */
+}
+
+.neptune{
+    position: fixed;
+    width: 16vh;
+    height: 16vh;
+    right: 5vh;
+    top: 5vh;
+    background:
+        linear-gradient(to left bottom, #14b80bc4 0% , #111c93 25% , #0d642ab3 35%/*bottom-right color*/, #3830d4 50% , #146675 70% , #1389bb 85% /*middle color*/, #10a045 100% /*top-left color*/),
+        linear-gradient(rgb(11, 23, 34), rgba(163, 47, 47, 0.95))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;}
+
