@@ -106,9 +106,9 @@ removeSarah.removeChild(removeSarah.children[1]);
 // Add the classes university and attendance to the first <ul>.
 let addClasses = document.querySelectorAll('ul')[1];
 let addClasses2 = document.querySelectorAll('ul')[2];
-
-addClasses.setAttribute('class', 'student_list university attendance');
-addClasses2.setAttribute('class', 'student_list');
+addClasses.classList.add("student_list", "university", "attendance");
+// addClasses.setAttribute('class', 'student_list university attendance');
+addClasses2.classList.add('student_list');
 
 
 
