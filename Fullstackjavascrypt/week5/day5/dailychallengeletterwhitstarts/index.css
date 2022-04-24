@@ -1,0 +1,24 @@
+
+
+.grid-sqaure{
+    background-color: black;
+    width: 15px;
+    height: 25px;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.starts-div{
+    display: grid;
+    width: 105px;
+    height: 175px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 0;
+    margin: 5px;
+}
