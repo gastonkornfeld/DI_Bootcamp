@@ -1,60 +1,67 @@
 
-
-let inventory = [
-    { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
-    { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
-    { id: 3, car_make: "Honda", car_model: "Accord", car_year: 1983 },
-    { id: 4, car_make: "Land Rover", car_model: "Defender Ice Edition", car_year: 2010 },
-    { id: 5, car_make: "Honda", car_model: "Accord", car_year: 1995 },
-  ];
-
 // Instructions
-// Part I
+// In this exercise, you will use object oriented programming concepts to define and use a custom object in JavaScript.
 
-// Create a function getCarHonda(carInventory) that takes a single parameter.
-// carInventory‘s value is an array which is an inventory of cars (see the array of objects below)
-// The function should
-// loop through the array of object and return the first car with the name “Honda”.
-// then, return a string in the format This is a {car_make} {car_model} from {car_year}.
-// Hint : Find an array method that returns the value of the first element in an array that pass a test.
-
-
-function getCarHonda(carInventory) {
-    let findHonda = carInventory.find((element) => element.car_make == 'Honda');
-    return `This is a ${findHonda.car_make} ${findHonda.car_model} from ${findHonda.car_year}`;
-}
-
-console.log(getCarHonda(inventory));
+// Create a class named Video. The class should be constructed with the following parameters:
+// title (a string)
+// uploader (a string, the person who uploaded it)
+// time (a number, the duration of the video - in seconds)
+// Create a method called watch() which displays a string as follows:
+// “uploader parameter watched all time parameter of title parameter!”
+// Instantiate a new Video instance and call the watch() method.
+// Instantiate a second Video instance with different values.
+// Bonus: Use an array to store data for five Video instances (ie. title, uploader, time)
+// Think of the best data structure to save this information within the array.
+// Bonus: Loop through the array to instantiate those instances.
 
 
+class Video {
+  constructor(title, uploader, time) {
+    this.title = title;
+    this.uploader = uploader;
+    this.time = time;
+  }
+
+  watch() {
+    return `${this.uploader} watched all ${this.time} seconds of ${this.title}`;
+  }
+};
+
+const videoNumberOne = new Video('The Mask', 'Frankestain', 7000);
+const videoNumberTwo = new Video('Dracula', 'Moby Dick', 7200);
+
+console.log(videoNumberOne.watch());
 
 
-
-
-
-
-
-
-// Part II
-
-// Create a function sortCarInventoryByYear(carInventory) that takes a single parameter. 
-// carInventory‘s value is an array which is an inventory of cars (see the array of objects below)
-// the function should return an inventory that is sorted by car_year, ascending.
-// Hint : Check out this tutorial on the sort method
-// Use the cars inventory below:
-
-let inventory2 = [
-  { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
-  { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
-  { id: 3, car_make: "Honda", car_model: "Accord", car_year: 1983 },
-  { id: 4, car_make: "Land Rover", car_model: "Defender Ice Edition", car_year: 2010 },
-  { id: 5, car_make: "Honda", car_model: "Accord", car_year: 1995 },
+const bonusArray = [
+  {
+    title: 'title1',
+    uploader: 'uploader1',
+    time: 6000
+  },
+  {
+    title: 'title2',
+    uploader: 'uploader2',
+    time: 6200
+  },
+  {
+    title: 'title3',
+    uploader: 'uploader3',
+    time: 6500
+  },
+  {
+    title: 'title4',
+    uploader: 'uploader4',
+    time: 6800
+  },
+  {
+    title: 'title5',
+    uploader: 'uploader5',
+    time: 6300
+  }
 ];
 
-
-function sortCarInventoryByYear(carInventory) {
-    let sortedYearsArray = carInventory.sort((a, b) => a.car_year - b.car_year);
-    console.log(sortedYearsArray);
-}
-
-sortCarInventoryByYear(inventory2);
+bonusArray.forEach((element, i) => {
+  let video = new Video(element.title, element.uploader, element.time);
+  console.log(video);
+});
