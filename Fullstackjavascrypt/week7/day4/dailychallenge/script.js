@@ -62,6 +62,5 @@ const bonusArray = [
 ];
 
 bonusArray.forEach((element, i) => {
-  let video = new Video(element.title, element.uploader, element.time);
-  console.log(video);
+  element.instance = new Video(element.title, element.uploader, element.time);
 });

@@ -60,7 +60,9 @@ console.log(objectToArray);
 // Modify the outcome of part 1, by multipling the user’s ID by 2.
 // Excepted output: [ [ 'user1', 36546 ], [ 'user2', 185666 ], [ 'user3', 180630 ] ]
 
+let arrayTo = objectToArray.map(([key,value]) => [key, value*2]);
 
+console.log(arrayTo);
 
 
 
