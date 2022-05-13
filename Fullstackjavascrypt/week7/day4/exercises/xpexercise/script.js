@@ -2,16 +2,16 @@
 // Instructions
 // Analyze the code below. What will be the output?
 const person = {
-    f_name: 'John Doe',
-    age: 25,
-    location: {
-        country: 'Canada',
-        city: 'Vancouver',
-        coordinates: [49.2827, -123.1207]
-    }
+  f_name: 'John Doe',
+  age: 25,
+  location: {
+    country: 'Canada',
+    city: 'Vancouver',
+    coordinates: [49.2827, -123.1207]
+  }
 }
 
-const {f_name, location: {country, city, coordinates: [lat, lng]}} = person;
+const { f_name, location: { country, city, coordinates: [lat, lng] } } = person;
 
 console.log(`I am ${f_name} from ${city}, ${country}. Latitude(${lat}), Longitude(${lng})`);
 
@@ -31,11 +31,12 @@ console.log(`I am ${f_name} from ${city}, ${country}. Latitude(${lat}), Longitud
 
 
 function displayStudentInfo(studentObject) {
-    const {first, last} = studentObject;
-    console.log(`Your full name is ${first} ${last}`);
+  //why not destructuring first and last in the params directly ?
+  const { first, last } = studentObject;
+  console.log(`Your full name is ${first} ${last}`);
 }
 
-displayStudentInfo({first: 'Elie', last:'Schoppik'});
+displayStudentInfo({ first: 'Elie', last: 'Schoppik' });
 
 
 
@@ -60,7 +61,7 @@ console.log(objectToArray);
 // Modify the outcome of part 1, by multipling the user’s ID by 2.
 // Excepted output: [ [ 'user1', 36546 ], [ 'user2', 185666 ], [ 'user3', 180630 ] ]
 
-let arrayTo = objectToArray.map(([key,value]) => [key, value*2]);
+let arrayTo = objectToArray.map(([key, value]) => [key, value * 2]);
 
 console.log(arrayTo);
 
@@ -113,19 +114,19 @@ class Dog {
 //       this.size = size;
 //     }
 //   };
-  
+
 
 // this is the correct option
-  
-    // 2
-  class Labrador extends Dog {
-    constructor(name, size) {
-      super(name);
-      this.size = size;
-    }
-  };
-  
-  
+
+// 2
+class Labrador extends Dog {
+  constructor(name, size) {
+    super(name);
+    this.size = size;
+  }
+};
+
+
 //     // 3
 //   class Labrador extends Dog {
 //     constructor(size) {
@@ -133,8 +134,8 @@ class Dog {
 //       this.size = size;
 //     }
 //   };
-  
-  
+
+
 //     // 4
 //   class Labrador extends Dog {
 //     constructor(name, size) {
@@ -165,10 +166,10 @@ class Dog {
 
 // What is, for each object below, the value of the property number and why?
 
-const object1 = { number: 5 }; 
-const object2 = object1; 
-const object3 = object2; 
-const object4 = { number: 5};
+const object1 = { number: 5 };
+const object2 = object1;
+const object3 = object2;
+const object4 = { number: 5 };
 
 object1.number = 4;
 console.log(object2.number) // 4
@@ -188,24 +189,24 @@ console.log(object4.number) // 5
 
 
 class Animal {
-    constructor(nameAnimal, type, color) {
-      this.nameAnimal = nameAnimal;
-      this.type = type;
-      this.color = color;
-    }
-  };
+  constructor(nameAnimal, type, color) {
+    this.nameAnimal = nameAnimal;
+    this.type = type;
+    this.color = color;
+  }
+};
 
 
-  class Mamal extends Animal {
-    constructor(nameAnimal, type, color) {
-      super(nameAnimal, type, color);
-    }
+class Mamal extends Animal {
+  constructor(nameAnimal, type, color) {
+    super(nameAnimal, type, color);
+  }
 
-    soundAnimal(sound = 'not noise') {
-        return `This is a ${this.type} named ${this.nameAnimal} color ${this.color} and does ${sound}`
-    }
-  };
+  soundAnimal(sound = 'not noise') {
+    return `This is a ${this.type} named ${this.nameAnimal} color ${this.color} and does ${sound}`
+  }
+};
 
-  let cow = new Mamal("margarita", "cow", "white and black");
+let cow = new Mamal("margarita", "cow", "white and black");
 
-  console.log(cow.soundAnimal('Muuu'));
+console.log(cow.soundAnimal('Muuu'));
