@@ -1,0 +1,43 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('https://www.elegantthemes.com/blog/wp-content/uploads/2019/06/remove-background-featured-image.jpg');
+    background-size: contain;
+}
+.header-div{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.header-div h1 {
+    margin: 20px 100px 20px 20px;
+}
+
+.logodiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.body-main-div {
+    background-color: rgb(115, 25, 199);
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size:auto;
+    background-image: url('https://github.com/devtlv/studentsGitHub/blob/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/circuit-pattern.png?raw=true');
+}
+
