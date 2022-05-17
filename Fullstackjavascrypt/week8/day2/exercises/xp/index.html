@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week8 day 2 xp ecercises</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <!-- Create a form like the one above. The form should contain three inputs:
+a small text input asking for a name,
+a larger textarea input to write a message,
+a submit input (“Send”)
+
+When you click the Send button, the form will be submitted with a GET method. 
+(you can use the same HTML file for the action url)
+Where will the sent data appear? -->
+    <div>
+        <form action="index.html">
+            <div>
+                <input type="text" name="name" id="name" value="Gaston">
+            </div>
+            <div>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="submit get">
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <form action="index.html" method="post">
+            <div>
+                <input type="text" name="name" id="name" value="Gaston">
+            </div>
+            <div>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="submit post">
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
