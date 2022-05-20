@@ -4,6 +4,7 @@
 // Instructions :
 // Create a function that takes a date object and return string in the following format: YYYYMMDDHHmmSS.
 
+
 // The format should contain a 4 digit year, 2 digit month, 2 digit day,
 //  2 digit hour(00-23), 2 digit minute and 2 digit second.
 // If any of the value has only single digit, you must use zero prefix,
@@ -33,3 +34,20 @@ function formatDate(dateObject) {
 
 
 console.log(formatDate(new Date(2020, 11, 9, 9, 1, 1)));
+
+
+
+
+// I find after on internet a better way of doing IsoTwoTone. 
+
+// const formatDateFromInternet = (date) => {
+//     const year = date.getFullYear();
+//     const month = (date.getMonth() + 1).toString().padStart(2, "0");
+//     const day = date.getDate().toString().padStart(2, "0");
+//     const hour = date.getHours().toString().padStart(2, "0");
+//     const minute = date.getMinutes().toString().padStart(2, "0");
+//     const second = date.getSeconds().toString().padStart(2, "0");
+//     return year + day + month + hour + minute + second;
+// };
+// // formatDate(new Date(1992, 2, 30, 23, 59, 2));
+// console.log(formatDateFromInternet(new Date(1992, 2, 30, 23, 59, 2)));
