@@ -1,0 +1,217 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('https://thumbs.dreamstime.com/b/grass-rain-drops-watering-lawn-blurred-green-background-water-closeup-nature-environment-concept-119136420.jpg');
+    background-size: cover;
+}
+.header-div{
+    display: flex;
+    height: 10vh;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.header-div h1 {
+    margin: 20px 100px 20px 20px;
+}
+
+.logodiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search-div {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 2fr 3fr 1fr 3fr;
+    gap: 50px;
+}
+
+
+#search {
+    width: 80%;
+    height: 30px;
+}
+
+#search:focus, #search:focus-visible {
+    border: none;
+    background-color: rgb(215, 245, 250);
+}
+
+
+.label-search {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#search-but, #delete-all-but, .delete-but {
+    background-color: rgb(173, 98, 16);
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.body-main-div {
+    background-color: rgb(115, 148, 189);
+    min-height: 90vh;
+    background-size:auto;
+}
+
+.wheater-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://i.pinimg.com/736x/e4/0e/aa/e40eaa8b9839461ea1c45889e5bfb7f9.jpg');
+    margin: 5px 10px;
+    border-radius: 5%;
+
+}
+h4 {
+    line-height: 0;
+}
+
+.wheater-icon {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+}
+.body-main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.city-list-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px 5px;
+    /* height: 60vh; */
+    width: 70vw;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.temperature {
+    font-size: 45px;
+    font-family: Roboto, sans-serif;
+}
+
+
+.city-country {
+    text-transform: uppercase;
+    font-family: Roboto, 'Lucida Sans', Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+.weather {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: Roboto, 'Lucida Sans', Geneva, Verdana, sans-serif;
+
+}
+
+.switch-div {
+    display: flex;
+}
+
+
+
+
+/* switch css */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 5px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+
+/* switch css */
+
+
+.error-div {
+    border: 2px solid black;
+    border-radius: 5px;
+    position: fixed;
+    top: 30vh;
+    left: 30vw;
+    background-color: aliceblue;
+    padding: 20px;
+    display: none;
+}
+
+.error-inside {
+    text-align: center;
+}

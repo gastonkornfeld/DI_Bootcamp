@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 Day 5 Ajax response, Creating weather app</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <div class="header-div">
+            <div class="logodiv">
+                <h1>WeatherApp</h1>
+            </div>
+            <div class="search-div">
+                <div class="label-search">
+                    <div>
+                        <label for="search">Search for a city</label><br>
+                    </div>
+                </div>
+                <div>
+                    <input type="search" id="search" name="search"><br>
+                </div>
+                      
+                
+                <div>
+                    <input id="search-but" type="button" value="SEARCH">
+                </div>
+                <div class="switch-div">
+                    <div>
+                        <p>CEL/FAR</p>
+                    </div>
+                    <div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label> 
+                    </div>
+
+                    <div class="error-div">
+                        <div class="error-inside">
+                            <h2>THE CITY YOU ENTER IS NOT CORRECT</h2>
+                            <p>try again</p>
+                            <input id="error-button" type="button" value="CLOSE">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="body-main-div">
+        <div class="city-list-div">
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
