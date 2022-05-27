@@ -154,6 +154,7 @@ function toJs(jsonObject) {
 
 
 function toMorse(result) {
+    // first we need to check if every char is in the morse code to reject or resolve
     let userWord = prompt('Which word you want to translate to morse');
     let arrayOfKeys = Object.keys(result);
     userWord = userWord.split('');
