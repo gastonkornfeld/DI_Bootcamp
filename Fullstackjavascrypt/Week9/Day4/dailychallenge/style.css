@@ -1,0 +1,52 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+body div {
+    padding: 5px;
+    margin: 5px;
+}
+
+header {
+    background-image: url('https://thumbs.dreamstime.com/b/grass-rain-drops-watering-lawn-blurred-green-background-water-closeup-nature-environment-concept-119136420.jpg');
+    background-size: cover;
+}
+.header-div{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+
+.logodiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+input:focus, input:focus-visible {
+    border: none;
+    background-color: rgb(229, 194, 137);
+    height: 30px;
+    cursor: pointer;
+}
+
+
+h3 {
+    line-height: 24px;
+}
+
+label {
+    font-size: 18px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
