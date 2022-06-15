@@ -1,47 +1,67 @@
 
 
 
-// const imported = require('./modules/axiosfetch.js')
+let imported = require('./modules/axiosfetch.js')
+let currentDate = require('./modules/date.js');
+let make_pizza = require('./modules/pizza.js');
+let operators = require('./modules/operator');
+
+// console.log(imported.fetchTest('https://jsonplaceholder.typicode.com/users'));
 
 
-// // imported.fetchTest('https://jsonplaceholder.typicode.com/users');
+// console.log(imported.fetchTest('https://www.swapi.tech/api/people/1'));
+
+console.log(`Hello ${currentDate.theName} the current date is ${currentDate.myDate()}`)
+
+make_pizza.make_pizza('small', 'olives', 'onion', 'tomato', 'calabaza');
 
 
-// console.log(imported('https://www.swapi.tech/api/people/1'));
+operators.add(2,3);
+operators.divide(10,2);
 
 
 
 
-const express = require('express');
-const products = require('./modules/products.js');
-console.log(products);
-const app = express();
 
-app.listen(5000, ()=>{
-  console.log('server is running on port 5000');
-})
+// The following example demonstrates how to use Node.js http module to create a web server.
 
-app.get('/api/products',(req,res)=>{
-  res.json(products)
-})
+// let http = require('http');
+// let server = http.createServer(function(req, res){
+// });
+// server.listen(5000); 
 
-app.get('/api/search',(req,res)=>{
-  const name = req.query.q;
-  const filter_products = products.filter(item => {
-    return item.name.toLowerCase().includes(name.toLowerCase());
-  })
-  if(filter_products<1){
-   return res.status(200).json({msg:'product not found'})
-  }
-  res.json(filter_products)
-})
 
-app.get('/api/products/:id', (req,res)=>{
-  // console.log(req.params);
-  const id = req.params.id
-  const product = products.find(item => item.id == id);
-  if(!product){
-    return res.status(404).json({msg:'not found'})
-  }
-  res.json(product);
-})
+
+// path module have all of this metods
+
+// path
+// { resolve: [Function: resolve],
+//   normalize: [Function: normalize],
+//   isAbsolute: [Function: isAbsolute],
+//   join: [Function: join],
+//   relative: [Function: relative],
+//   toNamespacedPath: [Function: toNamespacedPath],
+//   dirname: [Function: dirname],
+//   basename: [Function: basename],
+//   extname: [Function: extname],
+//   format: [Function: format],
+//   parse: [Function: parse]
+// }
+
+
+// example
+
+
+let path = require('path');
+let filename = path.basename('/Users/DI/example.js');
+console.log(filename);
+
+
+// Creating A Node.Js Application whit http
+
+
+// let https = require("http");
+// const myserver = https.createServer(function (req, res) {
+//   res.writeHead(200);
+//   res.end("hello world\n");
+// }).listen(3000);

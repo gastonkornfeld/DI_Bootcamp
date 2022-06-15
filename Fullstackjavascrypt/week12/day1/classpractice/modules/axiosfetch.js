@@ -1,16 +1,18 @@
-// const axios = require('axios').default;
+const axios = require('axios').default;
 
 
-// const fetchTest = (url) => {
-//     axios.get(url)
-//     .then(function (response) {
-//     // handle success
-//         console.log(response.data)
-//         return response.data;
-//     });
-// }
+const fetchTest = (url) => {
+    axios.get(url)
+    .then(function (response) {
+    // handle success
+        console.log(response.data)
+        return response.data;
+    });
+}
 
-// module.exports = fetchTest;
+module.exports = {
+    'fetchTest': fetchTest
+};
 
 
 
