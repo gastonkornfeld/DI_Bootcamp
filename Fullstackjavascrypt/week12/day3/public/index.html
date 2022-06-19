@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/search" method="POST">
+        <label>Name</label><input name="fullname">
+        <label>Adress</label><input name="Address">
+        <label>other</label><input name="other">
+        <label>Adress</label><input name="other2">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html> -->
+
+
+
+<!-- class example -->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h2>Get</h2>
+    <form action="http://localhost:3000/login" method="GET" target="_blank">
+      username: <input type="text" name="username" value="">
+      password: <input type="password" name="password" value="">
+      <input type="submit" name="" value="Submit">
+    </form>
+
+    <h2>Post</h2>
+    <form action="http://localhost:3000/login" method="POST" target="_blank">
+      username: <input type="text" name="username" value="">
+      password: <input type="password" name="password" value="">
+      <input type="submit" name="" value="Submit">
+    </form>
+
+    <h2>Fetch</h2>
+    username: <input type="text" name="username" value="" id="username">
+    password: <input type="password" name="password" value="" id="password">
+    <button type="button" name="button" onClick="sendData()">Fetch Data</button>
+    <div id="root"></div>
+
+  </body>
+</html>
