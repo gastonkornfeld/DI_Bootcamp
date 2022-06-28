@@ -89,11 +89,11 @@ const app = express();
 const db = require('knex')({
     client: 'pg',
     connection: {
-        host: '127.0.0.1',
-        user: 'postgres',
-        password: 'postgres',
-        database: 'dvdrental',
-        port: 5432
+      host: '127.0.0.1',
+      user: 'postgres',
+      password: 'postgres',
+      database: 'dvdrental',
+      port: 5432
     }
 });
 
