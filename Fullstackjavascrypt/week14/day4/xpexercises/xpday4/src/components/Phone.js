@@ -14,12 +14,12 @@ export default class Phone extends Component {
         };
     }
     changeColor = () => {
-        this.setState(
-            {
-             color: 'blue',   
-            }
-            
-        )
+      this.setState(
+          {
+            color: 'blue',   
+          }
+          
+      )
     }
   render() {
     return (
