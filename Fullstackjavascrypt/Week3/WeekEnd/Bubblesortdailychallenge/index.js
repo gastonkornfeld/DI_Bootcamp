@@ -1,7 +1,7 @@
 
 
 
-const numbers = [5,0,9,1,7,4,2,6,3,8];
+const numbers = [5,0,9,1,7,4,2,6,3,8,23,34,43,43,43,44,54,32,34,32,566];
 
 // Using the .toString() method convert the array to a string.
 console.log(numbers.toString());
@@ -21,12 +21,13 @@ console.log(numbers.join('caras '));
 // Requirement: Don’t copy paste solutions from Google
 
 for (let i = 0 ; i <= numbers.length-1; i++) { //total iteration = lenght -1
-    for (let j = 0 ; j <= numbers.length-1 ; j++) { // each iteration checks every pair of numbers
+    for (let j = 0 ; j <= numbers.length-2 ; j++) { // each iteration checks every pair of numbers
         if (numbers[j] < numbers[j + 1]) { // if the riht number is biger then switch them
             let temporaryValue = numbers[j];
             numbers[j] = numbers[j + 1];
             numbers[j + 1] = temporaryValue;
-            console.log(numbers);
+            // console.log(numbers);
         }
     }
 }
+console.log(numbers);

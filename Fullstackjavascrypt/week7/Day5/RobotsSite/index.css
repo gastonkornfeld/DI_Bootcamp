@@ -41,7 +41,8 @@ header {
 
 #search:focus, #search:focus-visible {
     border: none;
-    background-color: rgb(215, 245, 250);
+    background-color: rgb(6, 5, 5);
+
 }
 
 
@@ -103,4 +104,16 @@ h4 {
 
 .hidden {
     display: none;
+}
+
+
+.searchInput:hover {
+    background-color: black;
+}
+
+
+.searchInput:focus, .searchInput:focus-visible {
+    border: none;
+    background-color: rgb(6, 5, 5);
+    color: yellow;
 }

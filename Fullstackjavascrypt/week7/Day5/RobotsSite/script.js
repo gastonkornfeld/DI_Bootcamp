@@ -109,18 +109,18 @@ const robots = [
 ];
 
 let robotsDiv = document.querySelector('.robots-list-div');
-allRobots = [];
+let allRobots = [];
 
 
 
 class Robot {
     constructor(id, name, username, email, image){
-        this.id = id;
-        this.name = name;
-        this.username = username;
-        this.email = email;
-        this.image = image;
-    }
+      this.id = id;
+      this.name = name;
+      this.username = username;
+      this.email = email;
+      this.image = image;
+}
     createRobotCard() {
         this.robotCard = document.createElement('div');
         this.robotCard.className = 'robot-card';
@@ -164,4 +164,8 @@ function makeSearch(element) {
 }
 
 let searchInput = document.querySelector('#search');
-searchInput.addEventListener('input', makeSearch)
+searchInput.addEventListener('input', makeSearch);
+
+
+
+
